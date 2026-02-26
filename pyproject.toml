@@ -1,0 +1,24 @@
+[project]
+name = "trainingtracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "alembic>=1.18.4",
+    "authx>=1.5.1",
+    "fastapi>=0.133.1",
+    "httpx>=0.28.1",
+    "passlib>=1.7.4",
+    "psycopg2-binary>=2.9.11",
+    "pydantic>=2.12.5",
+    "pytest>=9.0.2",
+    "sqlalchemy>=2.0.47",
+    "uvicorn>=0.41.0",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
